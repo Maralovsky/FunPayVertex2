@@ -77,7 +77,7 @@ pm2 start main.py --interpreter=python3.11 --name=FunPayVertex2
 pm2 save
 pm2 startup
 
-echo -e "\n${CYAN}Установка FunPayVertex завершена!${NC}"
+echo -e "\n${CYAN}Установка FunPayVertex2 завершена!${NC}"
 echo -e "${CYAN}Для просмотра логов используйте команду: pm2 logs FunPayVertex2${NC}"
 
 pm2 logs FunPayVertex
