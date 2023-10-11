@@ -8,7 +8,7 @@ NC='\033[0m'
 
 set -e
 
-echo -e "${CYAN}Установщик FunPayVertex${NC}"
+echo -e "${CYAN}Установщик FunPayVertex2${NC}"
 echo -e "${MAGENTA}By NightStranger & Lemarty${NC}\n"
 
 echo -e "${GREEN}Обновление пакетов...${NC}"
@@ -45,10 +45,10 @@ rm -rf get-pip.py
 echo -e "${GREEN}Установка git...${NC}"
 sudo apt install -y git
 
-sudo rm -rf FunPayVertex
+sudo rm -rf FunPayVertex2
 
 echo -e "${GREEN}Клонирование репозитория FunPayVertex...${NC}"
-git clone https://github.com/NightStrang6r/FunPayVertex
+git clone https://github.com/Maralovsky/FunPayVertex2
 
 echo -e "${GREEN}Переход в директорию проекта...${NC}"
 cd FunPayVertex
@@ -73,11 +73,11 @@ sudo apt -y install nodejs
 echo -e "${GREEN}Установка pm2...${NC}"
 sudo npm install -g pm2
 
-pm2 start main.py --interpreter=python3.11 --name=FunPayVertex
+pm2 start main.py --interpreter=python3.11 --name=FunPayVertex2
 pm2 save
 pm2 startup
 
 echo -e "\n${CYAN}Установка FunPayVertex завершена!${NC}"
-echo -e "${CYAN}Для просмотра логов используйте команду: pm2 logs FunPayVertex${NC}"
+echo -e "${CYAN}Для просмотра логов используйте команду: pm2 logs FunPayVertex2${NC}"
 
 pm2 logs FunPayVertex
